@@ -1,3 +1,25 @@
-<p>
-  projects works!
-</p>
+<h2>PROJECTS</h2>
+
+<section class="projectShell">
+  <div *ngFor="let project of projects" class="projectIndividual">
+    <div>
+      <h3>{{project.name}}</h3>
+
+      <div>
+        <div *ngFor="let tech of project.tech">
+          {{tech}}
+        </div>
+
+        <p>{{project.description}}</p>
+
+        <div class="projectLinks">
+          <a href='{{project.link}}'>{{project.link}}</a>
+          <a href='{{project.video}}'>{{project.video}}</a>
+          <a href='{{project.git}}'>{{project.git}}</a>
+        </div>
+      </div>
+    </div>
+
+    <img src='{{project.image}}' alt='{{project.name}}'>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+img {
+    min-width: 255px;
+    height: 272px;
+}
+
+.projectIndividual {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 25px 0px 25px;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: space-between;
+}
