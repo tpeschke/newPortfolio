@@ -1,0 +1,17 @@
+.image {
+    height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+.skillShell {
+    border: 2px solid whitesmoke;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skillIndividual {
+    margin: 20px;
+}
