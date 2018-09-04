@@ -1,0 +1,19 @@
+/* HEADER */
+.headerShell {
+    display: none;
+    /* background: lightcoral;
+    display: flex;
+    justify-content: space-between; */
+}
+
+.headerLeft {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MENU */
+#menu {
+    display: none
+}
+
