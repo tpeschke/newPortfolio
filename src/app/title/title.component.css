@@ -1,3 +1,30 @@
+h1 {
+    font-size: 2.75em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    padding-bottom: 0.25em;
+    color: #ffffff;
+    border-bottom-color: #eaeaea;
+    border-bottom: solid 2px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    line-height: 1.5;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center;
+    width: 95%;
+}
+
+.subtitle {
+    margin: 2em auto 1em auto;
+}
+
 .banner {
     background-color: #333333;
     color: rgba(255, 255, 255, 0.75);
@@ -24,6 +51,6 @@
 
 .inner {
     background: #30303075;
-    padding: 0 3vw;
+    padding: 0 4vw;
     z-index: 1;
 }

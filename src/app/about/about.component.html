@@ -1,3 +1,29 @@
-<p>
-  about works!
-</p>
+<h2>ABOUT</h2>
+
+<div class="aboutShell">
+  <img src='{{headImage}}' alt="me">
+
+  <div>
+    <p>"If you like esoteric history jokes, I'm your man"
+      <br/> -my Tinder profile
+    </p>
+
+    <p>Most people know me as the man that reads books. I also rock climb and do carpentry but nobody makes fun of me for
+      that.
+    </p>
+  </div>
+</div>
+
+<div class="contactShell">
+  <div class="contactButton">
+    CONTACT ME DIRECTLY
+  </div>
+
+  <div class="contactLinkShell">
+    <div *ngFor="let contact of contacts">
+      <a href='{{contact.link}}' class="icon">
+        <img src='{{contact.image}}' alt='{{contact.name}}'>
+      </a>
+    </div>
+  </div>
+</div>
