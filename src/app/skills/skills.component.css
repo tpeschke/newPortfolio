@@ -1,3 +1,15 @@
+h2 {
+    color: grey;
+    font-weight: 500;
+	line-height: 1.5;
+	margin: 75px auto 75px auto;
+	letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-bottom: #eaeaea 2px solid;
+    text-align: center;
+    width: 80px;
+}
+
 .image {
     height: 100px;
 	width: 100px;
@@ -7,12 +19,27 @@
 .skillShell {
     border: 2px solid #eaeaea;
     border-radius: 5px;
-    margin: 15px;
+    margin: 25px 25px 100px 25px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.35em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 500;
 }
 
 .skillIndividual {
-    margin: 20px;
+    margin: 25px;
+}
+
+.large {
+    border-radius: 0;
 }
