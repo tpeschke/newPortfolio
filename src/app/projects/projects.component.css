@@ -3,13 +3,100 @@ img {
     height: 272px;
 }
 
-.projectIndividual {
+h2{
+    color: grey;
+    font-weight: 500;
+	line-height: 1.5;
+	margin: 75px auto 25px auto;
+	letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-bottom: #eaeaea 2px solid;
+    text-align: center;
+    width: 112px;
+}
+
+h3 {
+    color: rgb(175,59,44);
+    font-weight: 500;
+	line-height: 1.5;
+	margin: 35px auto 25px 0;
+	letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: rgb(175,59,44) 2px solid;
+    width: 280px;
+    text-align: left;
+}
+
+.projectInnerShell {
+    background: #222222;
     display: flex;
     justify-content: space-between;
-    margin: 15px 25px 0px 25px;
+    align-items: flex-end;
+    min-height: 345px;
+}
+
+#oddShell {
+    background: #ffffff
+}
+
+.projectDescription {
+    margin: 0 45px 45px 45px;
+}
+
+.projectImageShell {
+    margin-right: 45px;
+    margin-bottom: -3px;
+}
+
+#oddImage {
+    margin-right: 0;
+    margin-left: 45px;
 }
 
 .projectLinks {
     display: flex;
     justify-content: space-between;
+}
+
+.projectDescriptionInner {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.projectTech {
+    display: flex;
+}
+
+p {
+    color: grey;
+    font-weight: 500;
+	line-height: 1.5;
+    letter-spacing: 0.15em;
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+a {
+    color: rgb(175,59,44);
+}
+
+.imageTop {
+    background: whitesmoke;
+    width: 100%;
+    height: 45px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imageIndent {
+    background: #eaeaea;
+    width: 20%;
+    height: 5px;
+    border-radius: 10px;
 }

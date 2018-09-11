@@ -1,25 +1,78 @@
 <h2>PROJECTS</h2>
 
 <section class="projectShell">
-  <div *ngFor="let project of projects" class="projectIndividual">
-    <div>
-      <h3>{{project.name}}</h3>
+  <div *ngFor="let project of projects; let i = index" class="projectIndividual">
+    <ng-container *ngIf="i % 2==0;then even else odd"></ng-container>
 
-      <div>
-        <div *ngFor="let tech of project.tech">
-          {{tech}}
+    <ng-template #even>
+      <div class="projectInnerShell">
+        <div class="projectDescription">
+
+          <div class="projectTitle">
+            <h3>{{project.name}}</h3>
+          </div>
+
+          <div class="projectDescriptionInner">
+            <div class="projectTech">
+              <div *ngFor="let tech of project.tech">
+                <p>| {{tech}} |</p>
+              </div>
+            </div>
+
+            <p>{{project.description}}</p>
+
+            <div class="projectLinks">
+              <a href='{{project.link}}'>{{project.link}}</a>
+              <a href='{{project.video}}'>{{project.video}}</a>
+              <a href='{{project.git}}'>GitHub</a>
+            </div>
+          </div>
         </div>
 
-        <p>{{project.description}}</p>
-
-        <div class="projectLinks">
-          <a href='{{project.link}}'>{{project.link}}</a>
-          <a href='{{project.video}}'>{{project.video}}</a>
-          <a href='{{project.git}}'>GitHub</a>
+        <div class="projectImageShell">
+          <div class="imageTop">
+            <div class="imageIndent"></div>
+          </div>
+          <img src='{{project.image}}' alt='{{project.name}}'>
         </div>
       </div>
-    </div>
+    </ng-template>
 
-    <img src='{{project.image}}' alt='{{project.name}}'>
+
+    <!-- ================================================================ -->
+    <ng-template #odd>
+      <div class="projectInnerShell" id="oddShell">
+        <div class="projectImageShell" id="oddImage">
+          <div class="imageTop">
+            <div class="imageIndent"></div>
+          </div>
+          <img src='{{project.image}}' alt='{{project.name}}'>
+        </div>
+
+        <div class="projectDescription">
+
+          <div class="projectTitle">
+            <h3>{{project.name}}</h3>
+          </div>
+
+          <div class="projectDescriptionInner">
+            <div class="projectTech">
+              <div *ngFor="let tech of project.tech">
+                <p>| {{tech}} |</p>
+              </div>
+            </div>
+
+            <p>{{project.description}}</p>
+
+            <div class="projectLinks">
+              <a href='{{project.link}}'>{{project.link}}</a>
+              <a href='{{project.video}}'>{{project.video}}</a>
+              <a href='{{project.git}}'>GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+
   </div>
 </section>
