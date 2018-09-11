@@ -19,6 +19,7 @@ p {
     vertical-align: baseline;
     text-align: center;
     width: 95%;
+    letter-spacing: 0.10em;
 }
 
 .subtitle {
